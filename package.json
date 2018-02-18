@@ -1,0 +1,22 @@
+{
+  "name": "rohitlb.github.io",
+  "version": "1.0.0",
+  "description": "Node.js packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitlb/rohitlb.github.io.git"
+  },
+  "keywords": [
+    "rohit"
+  ],
+  "author": "Rohit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohitlb/rohitlb.github.io/issues"
+  },
+  "homepage": "https://github.com/rohitlb/rohitlb.github.io#readme"
+}
