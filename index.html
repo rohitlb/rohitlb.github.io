@@ -2,214 +2,418 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rohit Singh | Software Engineer - Backend, Cloud and Telecom</title>
-    <meta name="description"
-        content="Software Engineer with 7+ years building carrier-grade, real-time telecom and VoIP systems in C/C++ and Python, with Docker, Kubernetes, CI/CD and AWS.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rohit Singh | Software Engineer</title>
+  <meta name="description"
+    content="Rohit Singh, Software Engineer with 7+ years building carrier-grade, real-time telecom and VoIP systems in C/C++ and Python, with Docker, Kubernetes, CI/CD and AWS.">
+  <link rel="canonical" href="https://rohitlb.github.io/">
+  <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css" />
-    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://rohitlb.github.io/">
+  <meta property="og:title" content="Rohit Singh | Software Engineer">
+  <meta property="og:description"
+    content="7+ years building carrier-grade, real-time telecom and VoIP systems. C/C++, Python, Docker, Kubernetes, CI/CD, AWS.">
+  <meta property="og:image" content="https://rohitlb.github.io/static/img/rohit.jpg">
+  <meta name="twitter:card" content="summary">
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rohitlb.github.io/" />
-    <meta property="og:title" content="Rohit Singh | Software Engineer - Backend, Cloud and Telecom" />
-    <meta property="og:description"
-        content="Software Engineer with 7+ years building carrier-grade, real-time telecom and VoIP systems (SIP, RTP, Diameter, IMS) in C/C++ and Python, with Docker, Kubernetes, CI/CD and AWS." />
-    <meta property="og:image" content="https://rohitlb.github.io/static/img/rohit.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Rohit Singh | Software Engineer - Backend, Cloud and Telecom" />
-    <meta name="twitter:description"
-        content="Software Engineer with 7+ years building carrier-grade, real-time telecom and VoIP systems in C/C++ and Python, with Docker, Kubernetes, CI/CD and AWS." />
-    <meta name="twitter:image" content="https://rohitlb.github.io/static/img/rohit.jpg" />
-</head>
-<style type="text/css">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f6f8fa;
+      --text: #1b1f24;
+      --muted: #57606a;
+      --line: #e1e4e8;
+      --accent: #0a66c2;
+      --accent-soft: #e8f1fb;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1216;
+        --surface: #171b21;
+        --text: #e6e8eb;
+        --muted: #9aa4ae;
+        --line: #2a3038;
+        --accent: #5aa9f0;
+        --accent-soft: #16263a;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
-        background: #ffffff;
-        color: #1f2933;
-        font-weight: 300;
-        font-family: 'Roboto', sans-serif;
-        padding-top: 50px;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .navbar {
-        border-radius: 0;
-        background: #ffffff;
-        border-bottom: 1px solid #e4e7eb;
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
-    .navbar .nav > li > a {
-        color: #1f2933;
+    /* Nav */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
     }
 
-    .navbar .nav > li > a:hover {
-        color: #0b6bcb;
+    nav .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
     }
 
-    h1,
-    h2,
-    h3,
-    h4 {
-        font-weight: 300;
+    nav .brand { font-weight: 600; color: var(--text); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 22px;
+      margin: 0;
+      padding: 0;
     }
 
-    h3.content_heading {
-        font-weight: 400;
+    nav ul a { color: var(--muted); font-size: 15px; }
+    nav ul a:hover { color: var(--text); text-decoration: none; }
+
+    section[id] { scroll-margin-top: 64px; }
+
+    /* Hero */
+    header.hero {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 56px 0 40px;
     }
 
-    .tagline {
-        font-size: 20px;
-        color: #52606d;
-        margin-bottom: 4px;
+    .hero img {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      flex-shrink: 0;
+      border: 1px solid var(--line);
     }
 
-    .content_heading {
-        margin-left: 5px;
+    .hero h1 {
+      margin: 0;
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -0.02em;
     }
 
-    .content {
-        margin-left: 30px;
+    .hero .role {
+      margin: 6px 0 14px;
+      font-size: 18px;
+      color: var(--muted);
     }
 
-    .content_subheading {
-        margin-left: 5px;
-        color: #52606d;
+    .links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .btn {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      background: var(--surface);
     }
 
-    .content_desc {
-        margin-left: 5px;
+    .btn:hover { border-color: var(--accent); text-decoration: none; }
+
+    .btn.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
     }
 
-    .section_heading {
-        padding-top: 40px;
+    /* Sections */
+    section { padding: 36px 0; border-top: 1px solid var(--line); }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
     }
 
-    img {
-        vertical-align: middle !important;
-    }
+    .summary { margin: 0 0 24px; font-size: 17px; }
 
-    .profile_img {
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 10px 0;
-    }
-
-    p,
-    li {
-        font-size: 16px;
-    }
-
-    .content_ul li {
-        margin-bottom: 6px;
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
     }
 
     .stat {
-        text-align: center;
-        padding: 14px 6px;
-        margin-bottom: 14px;
-        border: 1px solid #e4e7eb;
-        border-radius: 6px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px 16px;
     }
 
-    .stat .num {
-        display: block;
-        font-size: 26px;
-        font-weight: 500;
-        color: #0b6bcb;
+    .stat b {
+      display: block;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.2;
     }
 
-    .stat .label {
-        display: block;
-        font-size: 14px;
-        color: #52606d;
+    .stat span { font-size: 13px; color: var(--muted); line-height: 1.4; display: block; }
+
+    /* Jobs */
+    .job + .job { margin-top: 34px; }
+
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
-    .focus_card {
-        border-left: 3px solid #0b6bcb;
-        padding: 4px 0 4px 14px;
-        margin-bottom: 16px;
+    .job h3, .edu h3 { margin: 0; font-size: 19px; font-weight: 600; }
+
+    .dates { color: var(--muted); font-size: 14px; white-space: nowrap; }
+
+    .meta { margin: 2px 0 8px; color: var(--muted); font-size: 15px; }
+
+    .about-co {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: var(--muted);
+      font-style: italic;
     }
 
-    .focus_card h4 {
-        font-weight: 500;
-        margin-top: 0;
+    .job ul { margin: 0; padding-left: 20px; }
+    .job li { margin-bottom: 6px; }
+    .job li::marker { color: var(--accent); }
+
+    /* Skills */
+    .skills { display: grid; gap: 14px; }
+
+    .skill-row {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 12px;
+      align-items: start;
     }
 
-    .contact_div {
-        margin-bottom: 30px;
+    .skill-row .cat { font-weight: 600; font-size: 15px; padding-top: 3px; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    .tag {
+      font-size: 13px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--text);
+      border: 1px solid var(--line);
     }
 
-    .project_list {
-        margin-bottom: 20px;
+    .contact p { margin: 0 0 16px; }
+
+    footer {
+      padding: 28px 0 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
     }
 
-    .panel {
-        margin-bottom: 0px;
+    /* Mobile */
+    @media (max-width: 680px) {
+      nav ul { display: none; }
+      header.hero { flex-direction: column; text-align: center; padding-top: 36px; }
+      .hero .links { justify-content: center; }
+      .hero h1 { font-size: 30px; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .skill-row { grid-template-columns: 1fr; gap: 6px; }
     }
 
-    a {
-        color: #0b6bcb;
+    @media print {
+      nav, .links { display: none; }
+      section { padding: 18px 0; }
     }
-</style>
+  </style>
+</head>
 
 <body>
-    <nav class="navbar navbar-fixed-top">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="/static/docs/RohitCV.pdf" target="_blank">CV</a></li>
-                <li><a target="_blank" href="https://github.com/rohitlb">GitHub</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <h1 align="center">Rohit Singh</h1>
-        <p align="center" class="tagline">Software Engineer &middot; Backend, Cloud/DevOps and Telecom</p>
-        <p align="center">
-            <a target="_blank" href="https://www.linkedin.com/in/rohit-singh-tech/">LinkedIn</a> &middot;
-            <a target="_blank" href="https://github.com/rohitlb">GitHub</a> &middot;
-            <a href="mailto:lb.rohitsingh@gmail.com">lb.rohitsingh@gmail.com</a>
-        </p>
-        <div align="center">
-            <img class="profile_img" src="/static/img/rohit.jpg" width="220" height="220" alt="Rohit Singh">
-        </div>
-        <div id="about"></div>
-        <div id="experience"></div>
-        <div id="skills"></div>
-        <div id="projects"></div>
-        <div id="education"></div>
-        <div id="contact"></div>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="#top">Rohit Singh</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="panel">
-        <div class="panel-footer" align="center">&copy; Rohit Singh</div>
-    </div>
+  <main class="wrap" id="top">
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#about").load("about.html");
-            $("#experience").load("experience.html");
-            $("#skills").load("skills.html");
-            $("#projects").load("projects.html");
-            $("#education").load("education.html");
-            $("#contact").load("contact.html");
-        });
-    </script>
+    <header class="hero">
+      <img src="/static/img/rohit.jpg" alt="Photo of Rohit Singh">
+      <div>
+        <h1>Rohit Singh</h1>
+        <p class="role">Software Engineer &middot; Backend, Cloud and Telecom Systems</p>
+        <div class="links">
+          <a class="btn primary" href="mailto:lb.rohitsingh@gmail.com">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/rohit-singh-tech/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/rohitlb" target="_blank" rel="noopener">GitHub</a>
+          <!-- Re-enable once static/docs/RohitCV.pdf is replaced with the current resume:
+          <a class="btn" href="/static/docs/RohitCV.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+          -->
+        </div>
+      </div>
+    </header>
 
+    <section id="about">
+      <h2>About</h2>
+      <p class="summary">
+        I'm a Software Engineer with 7+ years of experience building and maintaining carrier-grade, real-time
+        telecom and VoIP systems across 2G/3G/4G/LTE/5G networks. I work mostly in C/C++ and Python on Linux,
+        with SIP, RTP, Diameter and IMS, and I ship services with Docker, Kubernetes and CI/CD. My strengths
+        are deep debugging, test automation, and keeping high-volume systems stable.
+      </p>
+      <div class="stats">
+        <div class="stat"><b>45,000</b><span>simultaneous calls on a containerized SBC</span></div>
+        <div class="stat"><b>70%</b><span>fewer VoIP code bugs over 5 years</span></div>
+        <div class="stat"><b>~1,000</b><span>automated system tests written</span></div>
+        <div class="stat"><b>12</b><span>engineers trained on Kubernetes</span></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Engineer, Squire Technologies</h3>
+          <span class="dates">Sep 2021 &ndash; Present</span>
+        </div>
+        <p class="meta">Dorchester, UK &middot; Remote from India</p>
+        <p class="about-co">UK telecom software vendor whose carrier-grade signalling gateways and SMS platforms are
+          deployed in 100+ countries.</p>
+        <ul>
+          <li>Developed and maintained carrier-grade VoIP/IMS backend services in C/C++ (SIP, RTP, Diameter), and wrote
+            LLD/HLD designs with cross-functional teams.</li>
+          <li>Owned quality for the VoIP product portfolio, cutting code bugs by 70% (from 80&ndash;90 to 20&ndash;30
+            a year) over 5 years with ASan/TSan profiling and root-cause debugging.</li>
+          <li>Built the Docker images and Kubernetes deployment for a containerized SBC supporting 45,000
+            simultaneous calls on my own, and delivered a fully tested cloud PoC in 2 months.</li>
+          <li>Wrote about 1,000 Robot Framework system tests, about 10% of all company tests and 30&ndash;40% of VoIP
+            product tests, and added ASan/TSan and GCOV to the CI/CD pipelines.</li>
+          <li>Moved Windows-centric C/C++ builds to Linux with Docker, and upgraded legacy code to C++11/14/17.</li>
+          <li>Trained 12 engineers, including senior engineering and Ops staff, on Kubernetes and Docker, and mentored
+            junior engineers.</li>
+          <li>Worked with UK-based engineering and customer teams on feature delivery and production issues.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Engineer, Telesys Communication</h3>
+          <span class="dates">Sep 2019 &ndash; Sep 2021</span>
+        </div>
+        <p class="meta">Noida, India</p>
+        <ul>
+          <li>Containerized a legacy telecom product with Docker and Kubernetes. Built a working PoC in a few weeks,
+            finished full testing within 2 months with zero service disruption, then made it easier to operate.</li>
+          <li>Developed a VoIP traffic simulator in C/Python that generates up to 1,500 calls per second for QA, and
+            fixed critical bugs in VoIP modules.</li>
+          <li>Built and maintained telecom backend modules for high-volume RTP streaming and Diameter signalling.</li>
+          <li>Diagnosed production issues with GDB (live call analysis) and Wireshark (RTP stream analysis).</li>
+          <li>Automated deployment and configuration with Bash scripts, cutting manual effort by 20%.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-row">
+          <div class="cat">Languages</div>
+          <div class="tags"><span class="tag">C</span><span class="tag">C++ (11/14/17)</span><span class="tag">Python</span><span class="tag">Bash</span><span class="tag">Node.js</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="cat">Cloud and DevOps</div>
+          <div class="tags"><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">AWS</span><span class="tag">CI/CD</span><span class="tag">Git</span><span class="tag">Linux</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="cat">Telecom</div>
+          <div class="tags"><span class="tag">SIP</span><span class="tag">RTP</span><span class="tag">Diameter</span><span class="tag">IMS</span><span class="tag">SBC</span><span class="tag">VoIP</span><span class="tag">2G/3G/4G/LTE/5G</span><span class="tag">TCP/IP</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="cat">Debugging and Testing</div>
+          <div class="tags"><span class="tag">GDB</span><span class="tag">Wireshark</span><span class="tag">ASan/TSan/UBSan</span><span class="tag">GCOV</span><span class="tag">Robot Framework</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="cat">Databases</div>
+          <div class="tags"><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="cat">Ways of Working</div>
+          <div class="tags"><span class="tag">Agile (Scrum)</span><span class="tag">TDD</span><span class="tag">AI-assisted development (Claude Code, ChatGPT)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="edu">
+      <h2>Education</h2>
+      <div class="job-head">
+        <h3>B.Tech in Information Technology</h3>
+        <span class="dates">Aug 2015 &ndash; Sep 2019</span>
+      </div>
+      <p class="meta">KIET Group of Institutions, Ghaziabad</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>I'm open to backend, cloud/DevOps/SRE and telecom/VoIP engineering roles. The best way to reach me is by
+        email.</p>
+      <div class="links">
+        <a class="btn primary" href="mailto:lb.rohitsingh@gmail.com">lb.rohitsingh@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/rohit-singh-tech/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/rohitlb" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; 2026 Rohit Singh</div>
+  </footer>
 </body>
 
 </html>
