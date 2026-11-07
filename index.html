@@ -191,6 +191,7 @@
 
     /* Jobs */
     .job + .job { margin-top: 34px; }
+    .edu-item + .edu-item { margin-top: 18px; }
 
     .job-head {
       display: flex;
@@ -286,9 +287,9 @@
       <img src="/static/img/rohit.jpg" alt="Photo of Rohit Singh">
       <div>
         <h1>Rohit Singh</h1>
-        <p class="role">Software Engineer &middot; Backend, Cloud and Telecom Systems</p>
+        <p class="role">Software Engineer &middot; Backend, Cloud/DevOps, Telecom and Test Automation</p>
         <div class="links">
-          <a class="btn primary" href="mailto:lb.rohitsingh@gmail.com">Email me</a>
+          <a class="btn primary" href="mailto:LB.rohitsingh@gmail.com">Email me</a>
           <a class="btn" href="https://www.linkedin.com/in/rohit-singh-tech/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn" href="https://github.com/rohitlb" target="_blank" rel="noopener">GitHub</a>
           <!-- Re-enable once static/docs/RohitCV.pdf is replaced with the current resume:
@@ -301,10 +302,10 @@
     <section id="about">
       <h2>About</h2>
       <p class="summary">
-        I'm a Software Engineer with 7+ years of experience building and maintaining carrier-grade, real-time
-        telecom and VoIP systems across 2G/3G/4G/LTE/5G networks. I work mostly in C/C++ and Python on Linux,
-        with SIP, RTP, Diameter and IMS, and I ship services with Docker, Kubernetes and CI/CD. My strengths
-        are deep debugging, test automation, and keeping high-volume systems stable.
+        I'm a Software Engineer with 7+ years of experience across backend development, cloud/DevOps, telecom
+        systems and test automation. I build multithreaded C/C++ and Python services on Linux, ship them with Docker,
+        Kubernetes and CI/CD, and work across the telecom stack (SIP, RTP, Diameter, IMS, SS7) on 2G/3G/4G/LTE/5G
+        networks. My strengths are production debugging, test automation, and mentoring engineers.
       </p>
       <div class="stats">
         <div class="stat"><b>45,000</b><span>simultaneous calls on a containerized SBC</span></div>
@@ -322,22 +323,22 @@
           <h3>Software Engineer, Squire Technologies</h3>
           <span class="dates">Sep 2021 &ndash; Present</span>
         </div>
-        <p class="meta">Dorchester, UK &middot; Remote from India</p>
+        <p class="meta">Remote, India</p>
         <p class="about-co">UK telecom software vendor whose carrier-grade signalling gateways and SMS platforms are
           deployed in 100+ countries.</p>
         <ul>
-          <li>Developed and maintained carrier-grade VoIP/IMS backend services in C/C++ (SIP, RTP, Diameter), and wrote
-            LLD/HLD designs with cross-functional teams.</li>
+          <li>Developed and maintained carrier-grade VoIP/IMS backend services in C/C++ (SIP, RTP, Diameter) using pub-sub
+            messaging, and wrote LLD/HLD designs with cross-functional teams.</li>
           <li>Owned quality for the VoIP product portfolio, cutting code bugs by 70% (from 80&ndash;90 to 20&ndash;30
             a year) over 5 years with ASan/TSan profiling and root-cause debugging.</li>
           <li>Built the Docker images and Kubernetes deployment for a containerized SBC supporting 45,000
             simultaneous calls on my own, and delivered a fully tested cloud PoC in 2 months.</li>
           <li>Wrote about 1,000 Robot Framework system tests, about 10% of all company tests and 30&ndash;40% of VoIP
             product tests, and added ASan/TSan and GCOV to the CI/CD pipelines.</li>
-          <li>Moved Windows-centric C/C++ builds to Linux with Docker, and upgraded legacy code to C++11/14/17.</li>
-          <li>Trained 12 engineers, including senior engineering and Ops staff, on Kubernetes and Docker, and mentored
-            junior engineers.</li>
-          <li>Worked with UK-based engineering and customer teams on feature delivery and production issues.</li>
+          <li>Modernized legacy services by moving Windows-centric builds to Linux with Docker, and upgrading code to
+            C++11/14/17.</li>
+          <li>Trained 12 engineers, including senior engineering and Ops staff, on Kubernetes and Docker, mentored
+            junior engineers, and partnered with UK teams on production issues.</li>
         </ul>
       </div>
 
@@ -350,11 +351,24 @@
         <ul>
           <li>Containerized a legacy telecom product with Docker and Kubernetes. Built a working PoC in a few weeks,
             finished full testing within 2 months with zero service disruption, then made it easier to operate.</li>
-          <li>Developed a VoIP traffic simulator in C/Python that generates up to 1,500 calls per second for QA, and
+          <li>Developed a VoIP load-testing simulator in C/Python that generates up to 1,500 calls per second for QA, and
             fixed critical bugs in VoIP modules.</li>
-          <li>Built and maintained telecom backend modules for high-volume RTP streaming and Diameter signalling.</li>
-          <li>Diagnosed production issues with GDB (live call analysis) and Wireshark (RTP stream analysis).</li>
-          <li>Automated deployment and configuration with Bash scripts, cutting manual effort by 20%.</li>
+          <li>Engineered telecom backend modules in C for high-volume RTP streaming, Diameter, and SS7 (M3UA, MTP3,
+            SCCP) signalling.</li>
+          <li>Diagnosed production issues with GDB and Wireshark, and automated deployment with Bash scripts, cutting
+            manual effort by 20% in Agile/TDD sprints.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Engineering Intern and Advisor, Vizortex R&amp;D, Project Jungle, INOVARE / SBEPL</h3>
+          <span class="dates">2018 &ndash; 2019</span>
+        </div>
+        <p class="meta">India</p>
+        <ul>
+          <li>Built backend modules, REST APIs, and websites using the MEAN stack (MongoDB, Express.js, AngularJS,
+            Node.js) for web and healthcare platforms.</li>
         </ul>
       </div>
     </section>
@@ -364,38 +378,70 @@
       <div class="skills">
         <div class="skill-row">
           <div class="cat">Languages</div>
-          <div class="tags"><span class="tag">C</span><span class="tag">C++ (11/14/17)</span><span class="tag">Python</span><span class="tag">Bash</span><span class="tag">Node.js</span></div>
+          <div class="tags"><span class="tag">C</span><span class="tag">C++ (11/14/17)</span><span class="tag">Python</span><span class="tag">Bash</span><span class="tag">JavaScript (Node.js)</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="cat">Backend and Systems</div>
+          <div class="tags"><span class="tag">Multithreading</span><span class="tag">Pub-Sub Messaging</span><span class="tag">REST APIs</span><span class="tag">LLD/HLD Design</span><span class="tag">Performance Optimization</span></div>
         </div>
         <div class="skill-row">
           <div class="cat">Cloud and DevOps</div>
-          <div class="tags"><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">AWS</span><span class="tag">CI/CD</span><span class="tag">Git</span><span class="tag">Linux</span></div>
+          <div class="tags"><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">AWS</span><span class="tag">CI/CD</span><span class="tag">Git</span><span class="tag">Containerization</span><span class="tag">Build Automation</span></div>
         </div>
         <div class="skill-row">
           <div class="cat">Telecom</div>
-          <div class="tags"><span class="tag">SIP</span><span class="tag">RTP</span><span class="tag">Diameter</span><span class="tag">IMS</span><span class="tag">SBC</span><span class="tag">VoIP</span><span class="tag">2G/3G/4G/LTE/5G</span><span class="tag">TCP/IP</span></div>
+          <div class="tags"><span class="tag">SIP</span><span class="tag">RTP</span><span class="tag">Diameter</span><span class="tag">IMS</span><span class="tag">SS7 (M3UA, MTP3, SCCP)</span><span class="tag">SBC</span><span class="tag">VoIP</span><span class="tag">2G/3G/4G/LTE/5G</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="cat">Networking</div>
+          <div class="tags"><span class="tag">TCP/IP</span><span class="tag">UDP</span><span class="tag">DNS</span></div>
         </div>
         <div class="skill-row">
           <div class="cat">Debugging and Testing</div>
-          <div class="tags"><span class="tag">GDB</span><span class="tag">Wireshark</span><span class="tag">ASan/TSan/UBSan</span><span class="tag">GCOV</span><span class="tag">Robot Framework</span></div>
+          <div class="tags"><span class="tag">GDB</span><span class="tag">Wireshark</span><span class="tag">ASan/TSan/UBSan</span><span class="tag">GCOV</span><span class="tag">Robot Framework</span><span class="tag">Load Testing</span><span class="tag">Test Automation</span></div>
+        </div>
+        <div class="skill-row">
+          <div class="cat">Web Development</div>
+          <div class="tags"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">AngularJS</span><span class="tag">MEAN Stack</span></div>
         </div>
         <div class="skill-row">
           <div class="cat">Databases</div>
           <div class="tags"><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span></div>
         </div>
         <div class="skill-row">
+          <div class="cat">Operating Systems</div>
+          <div class="tags"><span class="tag">Linux (Rocky, CentOS, Ubuntu)</span><span class="tag">Windows</span></div>
+        </div>
+        <div class="skill-row">
           <div class="cat">Ways of Working</div>
-          <div class="tags"><span class="tag">Agile (Scrum)</span><span class="tag">TDD</span><span class="tag">AI-assisted development (Claude Code, ChatGPT)</span></div>
+          <div class="tags"><span class="tag">Agile (Scrum)</span><span class="tag">TDD</span><span class="tag">Technical Documentation</span><span class="tag">AI-assisted development (Claude Code, ChatGPT)</span></div>
         </div>
       </div>
     </section>
 
     <section id="education" class="edu">
       <h2>Education</h2>
-      <div class="job-head">
-        <h3>B.Tech in Information Technology</h3>
-        <span class="dates">Aug 2015 &ndash; Sep 2019</span>
+      <div class="edu-item">
+        <div class="job-head">
+          <h3>B.Tech in Information Technology</h3>
+          <span class="dates">2015 &ndash; 2019</span>
+        </div>
+        <p class="meta">KIET Group of Institutions, Ghaziabad &middot; 76%</p>
       </div>
-      <p class="meta">KIET Group of Institutions, Ghaziabad</p>
+      <div class="edu-item">
+        <div class="job-head">
+          <h3>Senior Secondary School, CBSE</h3>
+          <span class="dates">2013 &ndash; 2014</span>
+        </div>
+        <p class="meta">Army Public School, Allahabad &middot; 82%</p>
+      </div>
+      <div class="edu-item">
+        <div class="job-head">
+          <h3>High School, CBSE</h3>
+          <span class="dates">2011 &ndash; 2012</span>
+        </div>
+        <p class="meta">Army Public School, Allahabad &middot; CGPA 9.2</p>
+      </div>
     </section>
 
     <section id="contact" class="contact">
@@ -403,7 +449,7 @@
       <p>I'm open to backend, cloud/DevOps/SRE and telecom/VoIP engineering roles. The best way to reach me is by
         email.</p>
       <div class="links">
-        <a class="btn primary" href="mailto:lb.rohitsingh@gmail.com">lb.rohitsingh@gmail.com</a>
+        <a class="btn primary" href="mailto:LB.rohitsingh@gmail.com">LB.rohitsingh@gmail.com</a>
         <a class="btn" href="https://www.linkedin.com/in/rohit-singh-tech/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://github.com/rohitlb" target="_blank" rel="noopener">GitHub</a>
       </div>
