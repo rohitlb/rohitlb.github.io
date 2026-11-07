@@ -16,9 +16,8 @@
 title: Rohit Singh
 email: lb.rohitsingh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Rohit is a Information Technology Btech student at KIET group of institution Ghaziyabad.
-  He works at a Health Care providing Comapany - ApniCare. His interests focus on Providing better Health Care to all people.
-  He actively maintains th Server of Project.
+  Software Engineer with 7+ years building carrier-grade, real-time telecom and VoIP
+  systems in C/C++ and Python, with Docker, Kubernetes, CI/CD and AWS.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "#" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rohit_lb
