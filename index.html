@@ -172,6 +172,8 @@
       gap: 12px;
     }
 
+    .job-stats { margin: 4px 0 16px; }
+
     .stat {
       background: var(--surface);
       border: 1px solid var(--line);
@@ -301,18 +303,13 @@
 
     <section id="about">
       <h2>About</h2>
-      <p class="summary">
+      <p class="summary" style="margin-bottom:0">
         I'm a Software Engineer with 7+ years of experience across backend development, cloud/DevOps, telecom
         systems and test automation. I build multithreaded C/C++ and Python services on Linux, ship them with Docker,
         Kubernetes and CI/CD, and work across the telecom stack (SIP, RTP, Diameter, IMS, SS7) on 2G/3G/4G/LTE/5G
         networks. My strengths are production debugging, test automation, and mentoring engineers.
       </p>
-      <div class="stats">
-        <div class="stat"><b>45,000</b><span>simultaneous calls on a containerized SBC</span></div>
-        <div class="stat"><b>70%</b><span>fewer VoIP code bugs over 5 years</span></div>
-        <div class="stat"><b>~1,000</b><span>automated system tests written</span></div>
-        <div class="stat"><b>12</b><span>engineers trained on Kubernetes</span></div>
-      </div>
+
     </section>
 
     <section id="experience">
@@ -326,6 +323,12 @@
         <p class="meta">Remote, India</p>
         <p class="about-co">UK telecom software vendor whose carrier-grade signalling gateways and SMS platforms are
           deployed in 100+ countries.</p>
+        <div class="stats job-stats">
+          <div class="stat"><b>45,000</b><span>simultaneous calls on a containerized SBC</span></div>
+          <div class="stat"><b>70%</b><span>fewer VoIP code bugs over 5 years</span></div>
+          <div class="stat"><b>~1,000</b><span>automated system tests written</span></div>
+          <div class="stat"><b>12</b><span>engineers trained on Kubernetes</span></div>
+        </div>
         <ul>
           <li>Developed and maintained carrier-grade VoIP/IMS backend services in C/C++ (SIP, RTP, Diameter) using pub-sub
             messaging, and wrote LLD/HLD designs with cross-functional teams.</li>
@@ -342,12 +345,19 @@
         </ul>
       </div>
 
+
       <div class="job">
         <div class="job-head">
           <h3>Software Engineer, Telesys Communication</h3>
           <span class="dates">Sep 2019 &ndash; Sep 2021</span>
         </div>
         <p class="meta">Noida, India</p>
+        <div class="stats job-stats">
+          <div class="stat"><b>1,500</b><span>calls per second from a VoIP load-testing simulator</span></div>
+          <div class="stat"><b>2 months</b><span>to containerize and fully test a legacy telecom product</span></div>
+          <div class="stat"><b>0</b><span>service disruptions during the container migration</span></div>
+          <div class="stat"><b>20%</b><span>less manual deployment effort with Bash automation</span></div>
+        </div>
         <ul>
           <li>Containerized a legacy telecom product with Docker and Kubernetes. Built a working PoC in a few weeks,
             finished full testing within 2 months with zero service disruption, then made it easier to operate.</li>
